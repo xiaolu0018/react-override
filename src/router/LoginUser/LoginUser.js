@@ -9,9 +9,7 @@ class LoginUser extends Component {
 		if (this.props.user && this.props.user.name) {
       this.props.history.goBack();
 		} else {
-			window.location.replace(
-				'http://load.shunwang.com//oauth2/authorize.do?client_id=icafe8&redirect_uri=http://localhost:3000&response_type=code'
-			)
+			window.location.replace('/realLogin')
 		}
 	}
 	render() {
